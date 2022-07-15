@@ -1,0 +1,41 @@
+GET http://localhost:8080/getall
+Accept: application/json
+
+###
+GET http://localhost:8080/desk/22
+Accept: application/json
+
+###
+GET http://localhost:8080/rev/8
+Accept: application/json
+
+###
+GET http://localhost:8080/rat/5
+Accept: application/json
+
+###
+POST http://localhost:8080/add/inst?name=ssssssss&address=5646SSSSS&description=SSSSSSSSS
+Content-Type: application/json
+
+###
+POST http://localhost:8080/add/rev?{"institutionId": 3,"rating": 5,"review": "review_25"}
+Content-Type: application/json
+
+###
+POST http://localhost:8080/add/rev
+Accept: application/json
+cache-control: no-cache
+Content-Type: application/json
+{
+"institutionId": 3,
+"rating": 5,
+"review": "review_25"
+}
+
+###
+POST http://localhost:8080/ref/inst/8?description=abara-catabara
+Content-Type: application/json
+
+###
+POST http://localhost:8080/ref/rev/25?review=abara-catabara
+Content-Type: application/json
