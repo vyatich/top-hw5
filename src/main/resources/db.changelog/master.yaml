@@ -1,0 +1,19 @@
+databaseChangeLog:
+    - changeSet:
+        id: 1
+        author: anton.stolyarov
+        changes:
+          - sqlFile:
+              path: \db\changelog\change_sets\create_restaurant.sql
+    - changeSet:
+        id: 2
+        author: anton.stolyarov
+        changes:
+          - sqlFile:
+              path: \db\changelog\change_sets\review.sql
+    - changeSet:
+        id: 3
+        author: anton.stolyarov
+        changes:
+          - sqlFile:
+              path: \db\changelog\change_sets\create_test_table.sql
